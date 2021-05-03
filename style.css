@@ -1,0 +1,73 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;  
+}
+
+html{
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*hero section*/
+#hero{
+    background-image: url(./img/h.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 7rem;
+    position: center;
+    color: blanchedalmond;
+    left: 100px;
+}
+#hero h2{
+    
+    width: fit-content;
+    font-size: 2rem;
+    position: inherit;
+    color: rgba(248, 248, 244, 0.925);
+}
+#hero .cta{
+    display: inline;
+    padding: 4px 10px;
+    left: 100pc;
+    color: rgb(1, 1, 12);
+    background-color: transparent;
+    border: 2px solid rgb(2, 2, 27);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 100PX;
+    transition: .3s ease backgroun-color;
+    
+    
+}
+/*hero section end*/
